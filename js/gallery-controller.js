@@ -58,11 +58,10 @@ function onRenderModal(id) {
                 <button onclick="onOpenProj('${proj.id}')" class="check-it">CHECK IT OUT <i class="fas fa-arrow-right"></i></button>
                 <p>${proj.desc}</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
+                  <li>Date: ${proj.publishedAt}</li>
+                  <li>Category: html,css,js</li>
                 </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i> Close Project</button>
               </div>
             </div>
