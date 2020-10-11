@@ -71,7 +71,7 @@ function renderBookModal(bookId) {
     elModal.innerHTML = `
     <div class="close-modal"><button onclick="onCloseModal()">X</button></div>
     <h3>${books[bookIdx].name}</h3>
-    <img src="${books[bookIdx].imgUrl}"></img>
+    <img src="${books[bookIdx].imgUrl === '' ? defaultImg : books[bookIdx].imgUrl}"></img>
     <div class="modal-info">
     <p>${books[bookIdx].description}</p>
     <h1>$${books[bookIdx].price}</h1>
