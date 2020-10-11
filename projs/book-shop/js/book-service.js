@@ -113,7 +113,7 @@ function _createBooks() {
                 id: makeId(),
                 name: 'Harry Potter and the Philosophers Stone',
                 price: 19.99,
-                imgUrl: '../img/philosopher.jpg',
+                imgUrl: 'img/philosopher.jpg',
                 description: makeLorem(20),
                 rating: 0
             },
@@ -121,7 +121,7 @@ function _createBooks() {
                 id: makeId(),
                 name: 'Harry Potter and the Chamer Secrets',
                 price: 15.99,
-                imgUrl: '../img/chamber.jpg',
+                imgUrl: 'img/chamber.jpg',
                 description: makeLorem(20),
                 rating: 0
             },
@@ -129,7 +129,7 @@ function _createBooks() {
                 id: makeId(),
                 name: 'Harry Potter and the Socrcerers Stone',
                 price: 25.99,
-                imgUrl: '../img/sorc.jpg',
+                imgUrl: 'img/sorc.jpg',
                 description: makeLorem(20),
                 rating: 0
             },
@@ -137,7 +137,7 @@ function _createBooks() {
                 id: makeId(),
                 name: 'Harry Potter and Goblet of Fire',
                 price: 19.99,
-                imgUrl: '../img/fire.jpg',
+                imgUrl: 'img/fire.jpg',
                 description: makeLorem(20),
                 rating: 0
             },

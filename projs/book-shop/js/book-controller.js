@@ -63,7 +63,7 @@ function renderBookModal(bookId) {
     var booksContainer = document.querySelector('.books-container');
     var books = getBooks();
     var bookIdx = getBookIdxById(bookId);
-    var defaultImg = '../img/default1.jpg';
+    var defaultImg = 'img/default1.jpg';
 
     booksContainer.style.filter = 'blur(4px)';
     elModal.style.display = 'flex';

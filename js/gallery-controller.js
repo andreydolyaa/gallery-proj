@@ -2,16 +2,16 @@
 
 
 
-function onInit(){
+function onInit() {
     renderProjs();
 }
 
 
-function renderProjs(){
+function renderProjs() {
     var projs = getProjs();
     var strHTMLs = '';
 
-    projs.forEach(function(proj){
+    projs.forEach(function (proj) {
         strHTMLs += `
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
@@ -35,7 +35,7 @@ function renderProjs(){
 
 
 
-function onRenderModal(id){
+function onRenderModal(id) {
     var proj = getProjById(id);
     var modal = document.querySelector('.modal-render');
     modal.innerHTML = `
@@ -75,8 +75,18 @@ function onRenderModal(id){
 }
 
 
-function onOpenProj(id){
+function onOpenProj(id) {
     var proj = getProjById(id);
     var projUrl = proj.url;
     window.open(projUrl);
+}
+
+function onSubmitForm() {
+    var email = document.querySelector('.input-email').value;
+    var subject = document.querySelector('.input-subject').value;
+    var text = document.querySelector('.input-text').value;
+    var url = `
+    https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${text}
+    `;
+    window.open(url);
 }

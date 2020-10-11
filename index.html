@@ -28,7 +28,22 @@
   <aside class="offcanvas-aside">
     <!-- Contact -->
     <section id="contact">
-      <h4>Contact Me</h4>
+      <h2>Contact Me!</h2>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1"> Your Email address</label>
+          <input type="email" class="form-control input-email" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Subject</label>
+          <input class="form-control input-subject" type="text" placeholder="Default input">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Massage Body</label>
+          <textarea class="form-control input-text" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </form>
+      <button type="button" class="btn btn-primary btn-submit-form" onclick="onSubmitForm()">Submit</button>
     </section>
   </aside>
   <!-- Navigation -->

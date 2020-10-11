@@ -12,7 +12,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-    color:  #a0c9ff;
+    color:  #ffffff;
 }
 h1,
 h2,
@@ -576,4 +576,16 @@ ul.social-buttons li a:hover {
 .check-it:hover{
     background-color: rgb(0, 132, 255);
 
+}
+
+.btn-submit-form{
+    cursor: pointer;
+}
+
+.form-group label{
+    font-family:'Montserrat',Helvetica, Arial, sans-serif;;
+}
+#contact h2{
+    color:rgb(59, 128, 255);
+    margin-bottom:50px;
 }
