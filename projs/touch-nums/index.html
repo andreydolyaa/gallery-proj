@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Numbers</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="difficulty-btns">
+            <button onclick="setDifficulty(this.id)" id="id16">Easy! (16)</button>
+            <button onclick="setDifficulty(this.id)" id="id25">Medium! (25)</button>
+            <button onclick="setDifficulty(this.id)" id="id36">Hard! (36)</button>
+            <button  onclick="init()">Start</button>
+            <h3 class="start-msg">Select a difficulty and press start!</h3>
+            <h3 class="timer">00:00:00</h3>
+        </div>
+        <table>
+            <tbody class="board"></tbody>
+        </table>
+        <div class="restart">
+            <h1 class="game-over"></h1>
+            <button onclick="init()">Restart!</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

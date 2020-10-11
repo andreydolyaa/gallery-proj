@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 15px;
+    text-align: center;
+}
+
+.books-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 5% auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    right: 0;
+    margin: 120px auto 0 auto;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(216, 216, 216);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+}
+
+.modal img {
+    width: 200px;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.modal h3 {
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px dotted rgb(0, 0, 0);
+}
+
+.close-modal {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.close-modal button {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.book-id {
+    font-size: 10px;
+}
+
+.rating {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.rating button {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(95, 114, 138);
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.rating button:hover {
+    background-color: rgb(53, 52, 52);
+}
+
+.create-book {
+    border: 1px solid rgb(209, 209, 209);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-read, .btn-update, .btn-delete {
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.btn-read {
+    background-color: rgb(113, 158, 255);
+}
+
+.btn-read:hover {
+    background-color: rgb(42, 60, 99);
+}
+
+.btn-update {
+    background-color: rgb(255, 181, 85);
+}
+
+.btn-update:hover {
+    background-color: rgb(163, 115, 52);
+}
+
+.btn-delete {
+    background-color: rgb(255, 107, 107);
+}
+
+.btn-delete:hover {
+    background-color: rgb(150, 61, 61);
+}
+
+.books-container h1 span {
+    color: rgb(255, 136, 0);
+}
+
+.create-book button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(128, 219, 255);
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+.create-book button:hover {
+    background-color: rgb(69, 122, 143);
+}
+
+.input-book {
+    border: 1px solid rgb(128, 219, 255);
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+}
+
+.input-book::placeholder {
+    color: rgb(165, 165, 165);
+}
+
+.fa-angle-down {
+    transform: rotate(180deg);
+}
+
+.fa-angle-down1 {
+    transform: rotate(180deg);
+}
+
+i {
+    margin-left: 10px;
+}

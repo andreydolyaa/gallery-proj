@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInit()">
+    <h1>Todos</h1>
+
+    <section class="filter-container" >
+        <!-- <select onchange="onSetFilter(this.value)">
+            <option value="ALL">All</option>
+            <option value="ACTIVE">Active</option>
+            <option value="DONE">Done</option>
+        </select> -->
+        <div class="filter">
+            <h6>Filter:</h6>
+            <button value="ALL" onclick="onSetFilter(this.value)">All</button>
+            <button value="ACTIVE" onclick="onSetFilter(this.value)">Active</button>
+            <button value="DONE" onclick="onSetFilter(this.value)">Completed</button>
+        </div>
+        <div class="sort">
+        <h6>Sort By:</h6>
+        <select onchange="onSetSort(this.value)">
+            <option value="NONE">None</option>
+            <option value="IMPORTANCE">Importance</option>
+            <option value="TIME">Time</option>
+            <option value="TXT">Text</option>
+        </select>
+            <i class="fas fa-arrow-up" onclick="onSortUp()"></i>
+            <i class="fas fa-arrow-down" onclick="onSortDown()"></i>
+        </div>
+    </section>
+
+    <ul class="todo-list">
+    </ul>
+
+    <input class="new-todo-txt" type="text" placeholder="What todo?" />
+    <button class="btn" onclick="onAddTodo()">Add</button>
+    <select class="importance" onchange="onSetImportance(this.value)">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <section class="todo-stat">
+        Total todos:
+        <span class="total"></span>
+        Active:
+        <span class="active"></span> 
+    </section>
+
+
+    <footer>
+        cofferights 2020
+    </footer>
+
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+    <script src="https://kit.fontawesome.com/0172e47490.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    text-align: center;
+}
+
+h1{
+    color:rgb(255, 102, 0);
+}
+
+.game-img img{
+    width:500px;
+    margin:20px;
+    border-radius: 30px;
+    border:10px dashed rgb(233, 233, 233);
+    padding:10px;
+
+}
+.btns{
+    margin:10px;
+}
+.btns button{
+    width:200px;
+    padding:10px;
+    font-size:20px;
+    color:rgb(247, 168, 23);
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+    border:2px solid rgb(247, 168, 23);
+    border-radius: 5px;
+    margin:10px;
+    outline: none;
+    font-weight: 800;
+}
+.btns button:hover{
+    background-color: rgb(247, 168, 23);
+    border:2px solid  rgb(247, 168, 23);
+    color:rgb(255, 255, 255);
+}
+
+.victory{
+    color:rgb(0, 153, 255);
+    font-size: 90px;
+}

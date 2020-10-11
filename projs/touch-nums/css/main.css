@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+}
+.container{
+
+}
+.container table{
+    margin:0 auto;
+    margin-top: 10px;
+}
+.difficulty-btns{
+    margin-top:10px;
+    text-align: center;
+}
+
+table, tr, th{
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+}
+
+.num-cell{
+    width:60px;
+    padding:10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px;
+    color:rgb(111, 0, 255);
+    transition: 0.3s;
+    border-radius:5px;
+    
+}
+.num-cell:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+
+.restart{
+    text-align: center;
+    margin:10px;
+}
+button{
+    margin-top:10px;
+    width:100px;
+    height:30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3BBAFA;
+    cursor: pointer;
+    color:white;
+    font-size:14px;
+    transition: 0.3s;
+    outline: none;
+    margin-right:10px;
+}
+button:hover{
+    background-color:rgb(1, 82, 107);
+}
+.start-msg{
+    margin:10px;
+    color:rgb(44, 103, 158);
+    font-size:30px;
+}
+.game-over{
+    color: rgb(255, 0, 98);
+    font-size:50px;
+}
+.timer{
+    color: rgb(255, 0, 98);
+    font-size:30px;
+}

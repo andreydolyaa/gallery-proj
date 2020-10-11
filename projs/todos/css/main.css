@@ -1,0 +1,100 @@
+body {
+    background-color: lightblue;
+    font-size: 2em;
+    font-family:'Arial'
+}
+
+
+.filter-container {
+    background-color: lightskyblue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.filter-container select {
+    font-size: 1.1em;
+}
+
+.new-todo-txt {
+    padding: 5px 10px;
+    font-size: 30px;
+}
+
+.new-todo-txt:focus {
+    background-color: lightsteelblue;
+    transition: .5s;
+}
+
+.btn {
+    font-size: 1.1em;
+    border:0;
+    padding: 10px 20px ;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .5s;
+}
+.btn:hover {
+    background-color: magenta;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.todo-stat {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.todo-stat span {
+    color: purple;
+    font-weight: bold;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.importance{
+    font-size:1.1em;
+}
+
+.fa-arrow-down{
+    cursor: pointer;
+}
+
+.fa-arrow-up{
+    cursor: pointer;
+}
+
+.filter{
+    display:flex;
+    align-items: center;
+}
+.filter button{
+    padding:10px;
+    color:rgb(255, 255, 255);
+    background-color: transparent;
+    font-size:18px;
+    cursor: pointer;
+    border:none;
+}
+.filter button:focus{
+    outline-color:rgb(255, 255, 255);
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+
+
+.sort{
+    display:flex;
+    align-items: center;
+}

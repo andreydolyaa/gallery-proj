@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <div class="container">
+        <div class="books-container">
+            <h1><span>B</span>ook<span>S</span>hop</h1>
+
+            <div class="create-book">
+                <input class="input-book" name="bookName" type="text" placeholder="Enter book name">
+                <input class="input-book" name="bookPrice" type="text" placeholder="Enter book price">
+                <button onclick="onAddBook()">Create!</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th class="head-title" onclick="onSortByName()">Title<i class="fas fa-angle-up"></i></th>
+                        <th class="head-price" onclick="onSortByPrice()">Price<i class="fas fa-angle-up angle-up"></i></th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal"></div>
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+    <script src="https://kit.fontawesome.com/0172e47490.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
