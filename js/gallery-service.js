@@ -4,6 +4,10 @@
 var gProjs = _createProjs();
 
 
+function getModal(id){
+    return gProjs.find(proj => proj.id === id);
+}
+
 function getProjs(){
     return gProjs;
 }
@@ -17,7 +21,7 @@ function _createProjs() {
             desc:'A game where you need to tap the numbers by order!',
             url:"../projs/touch-nums/index.html",
             publishedAt:Date.now(),
-            labels: ['2d Arrays','Dynamic rendering'],
+            labels: ['2d Arrays',' Dynamic rendering'],
             img:'../img/img-projs/touch-nums.PNG'
         },
         {
@@ -27,7 +31,7 @@ function _createProjs() {
             desc:'A CRUDL Book shop where you can modify the shop items!',
             url:"../projs/book-shop/index.html",
             publishedAt:Date.now(),
-            labels: ['CRUDL','Dynamic rendering'],
+            labels: ['CRUDL',' Dynamic rendering'],
             img:'../img/img-projs/book-shop.PNG'
         },
         {
@@ -37,7 +41,7 @@ function _createProjs() {
             desc:'A game where you need to guess where the mines placed!',
             url:"../projs/minesweeper/index.html",
             publishedAt:Date.now(),
-            labels: ['2d Arrays','Dynamic rendering'],
+            labels: ['2d Arrays',' Dynamic rendering'],
             img:'../img/img-projs/minesweeper.PNG'
         },
         {
@@ -47,7 +51,7 @@ function _createProjs() {
             desc:'A game where you need to guess the picture!',
             url:"../projs/in-picture/index.html",
             publishedAt:Date.now(),
-            labels: ['2d Arrays','Dynamic rendering'],
+            labels: ['2d Arrays',' Dynamic rendering'],
             img:'../img/img-projs/guess.PNG'
         },
         {
@@ -57,7 +61,7 @@ function _createProjs() {
             desc:'A small App where you can manage your tasks!',
             url:"../projs/todos/index.html",
             publishedAt:Date.now(),
-            labels: ['2d Arrays','Dynamic rendering'],
+            labels: ['2d Arrays',' Dynamic rendering'],
             img:'../img/img-projs/todos.PNG'
         },
         {
@@ -67,7 +71,7 @@ function _createProjs() {
             desc:'A game where a monster should collect all the balls!',
             url:"../projs/ball-board/index.html",
             publishedAt:Date.now(),
-            labels: ['Matrixes','Dynamic rendering'],
+            labels: ['Matrixes',' Dynamic rendering'],
             img:'../img/img-projs/ball-board.PNG'
         },
     ];

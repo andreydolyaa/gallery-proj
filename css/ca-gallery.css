@@ -286,7 +286,6 @@ header.masthead .intro-text .intro-heading {
     margin: 0;
 }
 #portfolio .portfolio-item .portfolio-caption {
-    max-width: 400px;
     margin: 0 auto;
     padding: 25px;
     text-align: center;
@@ -766,4 +765,9 @@ fieldset[disabled] .btn-xl:hover {
 .container {
     padding-right: 0;
     padding-left: 0;
+}
+
+.img-render{
+    height:400px;
+    object-fit: cover;
 }
