@@ -12,7 +12,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-    color:  #ffffff;
+    color: rgb(255, 255, 255);
 }
 h1,
 h2,
@@ -510,7 +510,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136;
+    background-color:rgb(59, 128, 255);
 }
 .flex-align-center {
     display: flex;
@@ -518,7 +518,7 @@ ul.social-buttons li a:hover {
     align-items: center;
 }
 .text-primary {
-    color: #fed136 !important;
+    color: rgb(59, 128, 255) !important;
 }
 
 
@@ -607,4 +607,12 @@ ul.social-buttons li a:hover {
 }
 .close-canvas:focus{
     outline: 0;
+}
+
+.footer-link a{
+    text-decoration: none !important;
+}
+.footer-link:hover{
+    color: rgb(0, 49, 95) !important;
+    text-decoration: none !important;
 }
