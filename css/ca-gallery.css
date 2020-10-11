@@ -589,3 +589,22 @@ ul.social-buttons li a:hover {
     color:rgb(59, 128, 255);
     margin-bottom:50px;
 }
+
+.close-canvas{
+    font-family:'Montserrat',Helvetica, Arial, sans-serif;
+    font-size:20px;
+    cursor: pointer;
+    width:100%;
+    border:none;
+    background-color: transparent;
+    color:rgb(59, 128, 255);
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    outline:none;
+}
+.close-canvas:focus{
+    outline: 0;
+}
