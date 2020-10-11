@@ -36,7 +36,7 @@ function renderProjs(){
 
 
 function onRenderModal(id){
-    var proj = getModal(id);
+    var proj = getProjById(id);
     var modal = document.querySelector('.modal-render');
     modal.innerHTML = `
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -55,6 +55,7 @@ function onRenderModal(id){
                 <h2>${proj.title}</h2>
                 <p class="item-intro text-muted">${proj.labels}</p>
                 <img class="img-fluid d-block mx-auto" src="${proj.img}" alt="">
+                <button onclick="onOpenProj('${proj.id}')" class="check-it">CHECK IT OUT <i class="fas fa-arrow-right"></i></button>
                 <p>${proj.desc}</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
@@ -71,4 +72,11 @@ function onRenderModal(id){
     </div>
   </div>
     `
+}
+
+
+function onOpenProj(id){
+    var proj = getProjById(id);
+    var projUrl = proj.url;
+    window.open(projUrl);
 }

@@ -4,7 +4,7 @@
 var gProjs = _createProjs();
 
 
-function getModal(id){
+function getProjById(id){
     return gProjs.find(proj => proj.id === id);
 }
 

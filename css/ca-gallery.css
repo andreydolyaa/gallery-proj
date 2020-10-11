@@ -316,13 +316,16 @@ header.masthead .intro-text .intro-heading {
 }
 .portfolio-modal .modal-content {
     min-height: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     border: none;
     border-radius: 0;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+.modal-content img{
+    width:50%;
 }
 .portfolio-modal .modal-content h2 {
     font-size: 3em;
@@ -770,4 +773,40 @@ fieldset[disabled] .btn-xl:hover {
 .img-render{
     height:400px;
     object-fit: cover;
+}
+
+.my-img{
+    object-fit: cover;
+}
+
+.logo-css{
+    width:100%;
+}
+
+.logo-html{
+    width:80%;
+}
+
+.logo-js{
+    width:80%;
+}
+
+.check-it{
+    font-family: 'Montserrat',Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+    margin-bottom:10px;
+    width:180px;
+    height:35px;
+    border: none;
+    border-radius:5px;
+    background-color: #4baeff;
+    outline: none;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.check-it:hover{
+    background-color: rgb(0, 132, 255);
+
 }
